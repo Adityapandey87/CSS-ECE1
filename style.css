@@ -1,0 +1,27 @@
+p{
+    color: gold;
+    background-color: crimson;
+    text-align: center;
+    font-size: 100px;
+    padding: 10px;
+    
+    
+
+}
+.jk{
+    color: rgb(46, 10, 104);
+    background-color:burlywood;
+    text-align: center;
+    height: 100px ;
+    width:999px;
+    padding: 5PX;
+    border: 10px solid rgb(81, 6, 118) ; ;
+    margin: 50px;
+    display: inline-block;
+
+    
+
+    
+
+
+}
