@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Microsoft Homepage Clone</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+<link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#0067b8",
+                        "background-light": "#ffffff",
+                        "background-dark": "#111111",
+                        "hero-bg": "#f2f2f2",
+                        "hero-bg-dark": "#2d2d2d"
+                    },
+                    fontFamily: {
+                        display: ["Segoe UI", "Tahoma", "Geneva", "Verdana", "sans-serif"],
+                        sans: ["Segoe UI", "Tahoma", "Geneva", "Verdana", "sans-serif"],
+                    },
+                    borderRadius: {
+                        DEFAULT: "2px",
+                    },
+                },
+            },
+        };
+    </script>
+<style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .nav-link {
+            font-size: 13px;
+            padding: 0 10px;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            border-bottom: 2px solid transparent;
+        }
+        .nav-link:hover {
+            border-bottom-color: #000;
+        }
+        .dark .nav-link:hover {
+            border-bottom-color: #fff;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-gray-900 dark:text-gray-100 transition-colors duration-200">
+<header class="w-full h-14 border-b border-transparent dark:border-gray-800 bg-background-light dark:bg-background-dark sticky top-0 z-50">
+<nav class="max-w-[1600px] mx-auto h-full px-6 flex items-center justify-between">
+<div class="flex items-center h-full">
+<div class="flex items-center mr-6">
+<svg class="w-28 h-6" fill="currentColor" viewBox="0 0 137 28">
+<rect fill="#f25022" height="11" width="11" x="0" y="0"></rect>
+<rect fill="#7fba00" height="11" width="11" x="12" y="0"></rect>
+<rect fill="#00a4ef" height="11" width="11" x="0" y="12"></rect>
+<rect fill="#ffb900" height="11" width="11" x="12" y="12"></rect>
+<text fill="currentColor" font-family="Segoe UI Semibold, Segoe UI, sans-serif" font-size="20" x="32" y="21">Microsoft</text>
+</svg>
+</div>
+<div class="hidden lg:flex items-center h-full space-x-1">
+<a class="nav-link" href="#">Microsoft 365</a>
+<a class="nav-link" href="#">Teams</a>
+<a class="nav-link" href="#">Copilot</a>
+<a class="nav-link" href="#">Windows</a>
+<a class="nav-link" href="#">Surface</a>
+<a class="nav-link" href="#">Xbox</a>
+<a class="nav-link" href="#">Support</a>
+</div>
+</div>
+<div class="flex items-center h-full space-x-2 text-[13px]">
+<button class="hidden lg:flex items-center hover:underline px-2">
+                    All Microsoft <span class="material-symbols-outlined text-[18px] ml-1">expand_more</span>
+</button>
+<button class="flex items-center px-2">
+<span class="lg:mr-2">Search</span> <span class="material-symbols-outlined text-[20px] -scale-x-100">search</span>
+</button>
+<button class="flex items-center px-2">
+<span class="lg:mr-2">Cart</span> <span class="material-symbols-outlined text-[20px]">shopping_cart</span>
+</button>
+<button class="flex items-center px-2">
+<span class="lg:mr-2">Sign in</span> <span class="material-symbols-outlined text-[24px]">account_circle</span>
+</button>
+<button class="ml-4 p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800" onclick="document.documentElement.classList.toggle('dark')">
+<span class="material-symbols-outlined text-[20px]">contrast</span>
+</button>
+</div>
+</nav>
+</header>
+<main>
+<section class="relative bg-[#f1f1f1] dark:bg-zinc-800 overflow-hidden min-h-[500px] flex items-center">
+<div class="max-w-[1600px] mx-auto px-6 w-full grid grid-cols-1 md:grid-cols-2 gap-8 py-12">
+<div class="flex flex-col justify-center order-2 md:order-1 z-10">
+<h1 class="text-4xl md:text-5xl font-semibold mb-4 leading-tight">Microsoft 365</h1>
+<p class="text-lg mb-8 max-w-lg">
+                        Introducing Microsoft 365 Premium with our highest usage limits and exclusive Copilot features for AI power users.
+                    </p>
+<div class="flex flex-col sm:flex-row items-start sm:items-center space-y-4 sm:space-y-0 sm:space-x-6">
+<a class="bg-primary hover:bg-[#005a9e] text-white px-6 py-2.5 font-semibold transition-colors shadow-sm" href="#">
+                            Discover Microsoft 365 Premium
+                        </a>
+<a class="text-primary dark:text-blue-400 font-semibold flex items-center hover:underline group" href="#">
+                            See other Microsoft 365 options 
+                            <span class="material-symbols-outlined text-[18px] ml-1 transition-transform group-hover:translate-x-1">chevron_right</span>
+</a>
+</div>
+</div>
+<div class="relative order-1 md:order-2 flex items-center justify-center">
+<div class="relative w-full max-w-[500px] aspect-square">
+<img alt="3D Floating Microsoft 365 Icons" class="w-full h-full object-contain drop-shadow-2xl opacity-90 dark:opacity-80 transition-opacity" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWcaydZaONKQ081wjYJb_8h0SjWhNu1agJHmA_II7YeUIApdLdP03RKE3m1ShQK2tcVXR016_LrmhFHbDnnVykjsXHIP4B-wfXcDbE4DSGSOl9k0KzAf4z8LiaXc1veaIfQP2p0eKGfUXXR0TjJTqccAAVaFI1mav_sIEVRdEVvVzs_eSZwoWJi3UW98124uY3sxK3czy8gYsmjaUl-lmSwm73HAee2J8fDhKrSd3suiGAOXpbJ_nCeU5f71CAPYQ31Crs0yb93mk"/>
+</div>
+</div>
+</div>
+</section>
+<div class="flex items-center justify-center py-6 space-x-6">
+<button class="hover:bg-gray-100 dark:hover:bg-gray-800 p-1 rounded">
+<span class="material-symbols-outlined text-[20px]">pause</span>
+</button>
+<button class="hover:bg-gray-100 dark:hover:bg-gray-800 p-1 rounded">
+<span class="material-symbols-outlined text-[20px]">chevron_left</span>
+</button>
+<div class="flex items-center space-x-3">
+<span class="w-2.5 h-2.5 rounded-full bg-gray-800 dark:bg-gray-200 cursor-pointer"></span>
+<span class="w-2 h-2 rounded-full border border-gray-600 dark:border-gray-400 cursor-pointer"></span>
+</div>
+<button class="hover:bg-gray-100 dark:hover:bg-gray-800 p-1 rounded">
+<span class="material-symbols-outlined text-[20px]">chevron_right</span>
+</button>
+</div>
+<section class="max-w-[1200px] mx-auto px-6 py-12">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+<div class="flex flex-col items-center group cursor-pointer text-center">
+<div class="mb-4 text-primary">
+<svg class="w-10 h-10" fill="currentColor" viewBox="0 0 24 24">
+<path d="M0 0h11.4v11.4H0V0zm12.6 0H24v11.4H12.6V0zM0 12.6h11.4V24H0V12.6zm12.6 0H24V24H12.6V12.6z"></path>
+</svg>
+</div>
+<span class="text-primary dark:text-blue-400 font-semibold group-hover:underline underline-offset-4 decoration-2">Choose your Microsoft 365</span>
+</div>
+<div class="flex flex-col items-center group cursor-pointer text-center">
+<div class="mb-4">
+<svg class="w-10 h-10 text-gray-800 dark:text-gray-200" fill="currentColor" viewBox="0 0 24 24">
+<path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm4.5-9h-2v-2h2v2zm-7 0h-2v-2h2v2zm3.5 2c-2.33 0-4.31 1.46-5.11 3.5h1.2c.7-1.44 2.18-2.4 3.91-2.4s3.21.96 3.91 2.4h1.2c-.8-2.04-2.78-3.5-5.11-3.5z"></path>
+</svg>
+</div>
+<span class="text-primary dark:text-blue-400 font-semibold group-hover:underline underline-offset-4 decoration-2">Shop Xbox</span>
+</div>
+<div class="flex flex-col items-center group cursor-pointer text-center">
+<div class="mb-4 text-primary">
+<svg class="w-10 h-10" fill="currentColor" viewBox="0 0 24 24">
+<path d="M0 0h11.4v11.4H0V0zm12.6 0H24v11.4H12.6V0zM0 12.6h11.4V24H0V12.6zm12.6 0H24V24H12.6V12.6z"></path>
+</svg>
+</div>
+<span class="text-primary dark:text-blue-400 font-semibold group-hover:underline underline-offset-4 decoration-2">Get Windows 11</span>
+</div>
+<div class="flex flex-col items-center group cursor-pointer text-center">
+<div class="mb-4">
+<span class="material-symbols-outlined text-[40px] text-gray-800 dark:text-gray-200">tablet_mac</span>
+</div>
+<span class="text-primary dark:text-blue-400 font-semibold group-hover:underline underline-offset-4 decoration-2">Explore Surface devices</span>
+</div>
+</div>
+</section>
+<section class="max-w-[1600px] mx-auto px-6 py-12">
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<div class="bg-white dark:bg-zinc-900 border border-transparent dark:border-gray-800 shadow-sm overflow-hidden flex flex-col">
+<img alt="Surface Laptop 5" class="w-full aspect-[16/9] object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDcBDxfgwA2boBniVIXPDGDg3xWBVtfbhMvwccN2dwCoyJbxK5B-BAqxHNz-QjEb4qdKz3kHDEyT5yCcIVVJQY3eles5YBQVOJEnIVDNQMQRpWJZ67Zwsv7zd0Nhn6eU-EpAcZaezfbN-PnzjpcjPgYXk4x3Sn_OgKDLbXQBWkaDATtFkY4lP_DtdrrLzEJ3zG5n4thjwNplaISGJirTJ4OqIJX6J8EOyP-G1jBxfRSCalOUsN53spH_9rrGpCZ2L69LJiqsEOr4YI"/>
+<div class="p-6 flex flex-col flex-grow">
+<h3 class="text-2xl font-semibold mb-2">Surface Laptop 5</h3>
+<p class="mb-6 flex-grow">Sophisticated style and multitasking speed powered by 12th Gen Intel® Core, with Windows 11.</p>
+<a class="text-primary dark:text-blue-400 font-semibold hover:underline flex items-center group" href="#">
+                            Learn more <span class="material-symbols-outlined text-[18px] ml-1 transition-transform group-hover:translate-x-1">chevron_right</span>
+</a>
+</div>
+</div>
+<div class="bg-white dark:bg-zinc-900 border border-transparent dark:border-gray-800 shadow-sm overflow-hidden flex flex-col">
+<img alt="Xbox Series X" class="w-full aspect-[16/9] object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3PFh30HKFFLE8y-JjD2JNZb8Ld_Q8iQLA7EPkWbeVpwQvwQ7HvBnTN3C7sfOlDysay91W4OlGjyrcohMlRnPdxH-cO1rrzG-aG8Kh4T5JmG75BnvePAmjylAq6XN9yIdnhSjCQazcFD6WC1_LRu-lo8mvDXRtZUJG18M6bcznFYdhOLExFIPuBNG7tJlNFZNwzaMPJU9EceeRTDL_tHUuEKCrrc6Vo8m4sM3weTvhFCfyTaRl1xgj1HgdsG9VrJKvwocZ0lXrsoo"/>
+<div class="p-6 flex flex-col flex-grow">
+<h3 class="text-2xl font-semibold mb-2">Xbox Series X</h3>
+<p class="mb-6 flex-grow">The fastest, most powerful Xbox ever.</p>
+<a class="text-primary dark:text-blue-400 font-semibold hover:underline flex items-center group" href="#">
+                            Shop Xbox Series X <span class="material-symbols-outlined text-[18px] ml-1 transition-transform group-hover:translate-x-1">chevron_right</span>
+</a>
+</div>
+</div>
+<div class="bg-white dark:bg-zinc-900 border border-transparent dark:border-gray-800 shadow-sm overflow-hidden flex flex-col">
+<img alt="Microsoft 365" class="w-full aspect-[16/9] object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBS4qcoZhNSZujQ0ZSueD3Rx_0Fb_BOyYVhxO66fDkePDFQ3odquxDenyvpw2EPBzoErVx74ZzfdoB08fOImpPfqMSJnSNjIAsUiOOZdI1rtm15N8z1LpoCIFf7nm_HDg9gu_veD8vv6eLgnkUly_LIFjkHUe7OWOuLg97uGf4FHM-aDtu1JWxNyL7eQ4jgNwGwWwAkoiHF3cagQY_ogy7MaCU25mTjoDGiKGoCtbCxWQs90g-ldwDv7tAzRkEgrJzO4IKFJZpjQ1w"/>
+<div class="p-6 flex flex-col flex-grow">
+<h3 class="text-2xl font-semibold mb-2">Microsoft 365</h3>
+<p class="mb-6 flex-grow">Apps and features to help you turn ideas into reality, stay safer, and focus on the important things.</p>
+<a class="text-primary dark:text-blue-400 font-semibold hover:underline flex items-center group" href="#">
+                            For 1 person <span class="material-symbols-outlined text-[18px] ml-1 transition-transform group-hover:translate-x-1">chevron_right</span>
+</a>
+</div>
+</div>
+<div class="bg-white dark:bg-zinc-900 border border-transparent dark:border-gray-800 shadow-sm overflow-hidden flex flex-col">
+<img alt="Surface Pro 9" class="w-full aspect-[16/9] object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB4nkUIRrN0qbDG26rQugH3DV3n13o_w7Dh-OY5yyoIYbu9IQQlOTxJfW8Jl-jsbxk8Y3mANyYhL99Ly6rqIx0-t96UCH2i0qN9zE_hkY8Z3WS3uFE6P1vEgVEE_3bHHZM0hUEWptOZR8tqxyeUZZjzmbSyKea03yTa7JMdyYyHImT3Hs9ZiEAYGPm2EdQCXr9ZkBj-LTW_6c8q1ZfxGWi2rv4TMEAmserIBeJrvytnU4r5Tk5mKOE0ocBZdsA-WZ2Wi_Cugh2fKoo"/>
+<div class="p-6 flex flex-col flex-grow">
+<h3 class="text-2xl font-semibold mb-2">Surface Pro 9</h3>
+<p class="mb-6 flex-grow">The tablet flexibility you want and the laptop performance you need — all in one ultra-portable device.</p>
+<a class="text-primary dark:text-blue-400 font-semibold hover:underline flex items-center group" href="#">
+                            Learn more <span class="material-symbols-outlined text-[18px] ml-1 transition-transform group-hover:translate-x-1">chevron_right</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="bg-[#f2f2f2] dark:bg-zinc-900 mt-20 pt-10 pb-6">
+<div class="max-w-[1600px] mx-auto px-6">
+<div class="grid grid-cols-2 md:grid-cols-6 gap-8 mb-10 text-[11px] text-gray-600 dark:text-gray-400">
+<div class="flex flex-col space-y-3">
+<h4 class="text-[14px] font-semibold text-gray-800 dark:text-gray-200">What's new</h4>
+<a class="hover:underline" href="#">Surface Pro 9</a>
+<a class="hover:underline" href="#">Surface Laptop 5</a>
+<a class="hover:underline" href="#">Surface Studio 2+</a>
+<a class="hover:underline" href="#">Surface Laptop Go 2</a>
+</div>
+<div class="flex flex-col space-y-3">
+<h4 class="text-[14px] font-semibold text-gray-800 dark:text-gray-200">Microsoft Store</h4>
+<a class="hover:underline" href="#">Account profile</a>
+<a class="hover:underline" href="#">Download Center</a>
+<a class="hover:underline" href="#">Microsoft Store Support</a>
+<a class="hover:underline" href="#">Returns</a>
+</div>
+<div class="flex flex-col space-y-3">
+<h4 class="text-[14px] font-semibold text-gray-800 dark:text-gray-200">Education</h4>
+<a class="hover:underline" href="#">Microsoft in education</a>
+<a class="hover:underline" href="#">Devices for education</a>
+<a class="hover:underline" href="#">Microsoft Teams for Education</a>
+</div>
+<div class="flex flex-col space-y-3">
+<h4 class="text-[14px] font-semibold text-gray-800 dark:text-gray-200">Business</h4>
+<a class="hover:underline" href="#">Microsoft Cloud</a>
+<a class="hover:underline" href="#">Microsoft Security</a>
+<a class="hover:underline" href="#">Azure</a>
+<a class="hover:underline" href="#">Dynamics 365</a>
+</div>
+<div class="flex flex-col space-y-3">
+<h4 class="text-[14px] font-semibold text-gray-800 dark:text-gray-200">Developer &amp; IT</h4>
+<a class="hover:underline" href="#">Developer Center</a>
+<a class="hover:underline" href="#">Documentation</a>
+<a class="hover:underline" href="#">Microsoft Learn</a>
+</div>
+<div class="flex flex-col space-y-3">
+<h4 class="text-[14px] font-semibold text-gray-800 dark:text-gray-200">Company</h4>
+<a class="hover:underline" href="#">Careers</a>
+<a class="hover:underline" href="#">About Microsoft</a>
+<a class="hover:underline" href="#">Company news</a>
+</div>
+</div>
+<div class="flex flex-col md:flex-row justify-between items-center text-[11px] text-gray-600 dark:text-gray-400 space-y-4 md:space-y-0">
+<div class="flex items-center space-x-6">
+<button class="flex items-center hover:underline">
+<span class="material-symbols-outlined text-[16px] mr-2">public</span> English (United States)
+                    </button>
+<button class="flex items-center hover:underline">
+                        Your Privacy Choices
+                    </button>
+</div>
+<div class="flex flex-wrap justify-center md:justify-end gap-x-6 gap-y-2">
+<a class="hover:underline" href="#">Sitemap</a>
+<a class="hover:underline" href="#">Contact Microsoft</a>
+<a class="hover:underline" href="#">Privacy</a>
+<a class="hover:underline" href="#">Terms of use</a>
+<a class="hover:underline" href="#">Trademarks</a>
+<a class="hover:underline" href="#">Safety &amp; eco</a>
+<a class="hover:underline" href="#">About our ads</a>
+<span>© Microsoft 2026</span>
+</div>
+</div>
+</div>
+</footer>
+
+</body></html>
